@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - ProDry Equipment</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><a href="index.html" style="text-decoration: none; color: inherit;">ProDry Equipment</a></h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Order Confirmation Section -->
+    <section class="order-confirmation" style="padding-top: 120px; text-align: center; min-height: 60vh;">
+        <div class="container">
+            <div class="confirmation-content">
+                <i class="fas fa-check-circle" style="font-size: 4rem; color: #2d5a2d; margin-bottom: 2rem;"></i>
+                <h1>Order Confirmed!</h1>
+                <div id="order-details" style="background: white; padding: 2rem; border-radius: 10px; margin-bottom: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <h3 style="color: #2d5a2d; margin-bottom: 1rem;">Order Summary</h3>
+                    <div id="confirmed-order-items"></div>
+                    <div style="border-top: 2px solid #2d5a2d; margin-top: 1rem; padding-top: 1rem;">
+                        <strong>Total: $<span id="confirmed-total">0.00</span></strong>
+                    </div>
+                </div>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #666;">
+                    Thank you for your order. Your order details have been sent to us and we will contact you soon to confirm delivery.
+                </p>
+                <div class="confirmation-info" style="background: #f8f9fa; padding: 2rem; border-radius: 10px; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    <h3 style="color: #2d5a2d; margin-bottom: 1rem;">What happens next?</h3>
+                    <ul style="text-align: left; color: #666;">
+                        <li style="margin-bottom: 1rem;">We will review your order and contact you within 24 hours</li>
+                        <li style="margin-bottom: 1rem;">Our team will arrange delivery to your address</li>
+                        <li style="margin-bottom: 1rem;">Payment will be collected upon delivery (Cash on Delivery)</li>
+                        <li style="margin-bottom: 1rem;">You will receive tracking information once shipped</li>
+                    </ul>
+                </div>
+                <div class="action-buttons">
+                    <a href="products.html" class="cta-button" style="text-decoration: none; margin-right: 1rem;">Continue Shopping</a>
+                    <a href="index.html" class="cta-button" style="text-decoration: none; background: #6c757d;">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ProDry Equipment</h3>
+                    <p>Your trusted partner for professional drying solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ProDry Equipment. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

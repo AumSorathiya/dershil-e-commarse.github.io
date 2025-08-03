@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ProDry Equipment</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><a href="index.html" style="text-decoration: none; color: inherit;">ProDry Equipment</a></h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Products Section -->
+    <section id="products" class="products" style="padding-top: 120px;">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-filters" style="margin-bottom: 2rem; text-align: center;">
+                <input type="text" id="product-search" placeholder="Search products..." style="padding: 10px; border: 2px solid #ddd; border-radius: 5px; margin-right: 1rem; width: 300px;">
+                <select id="price-filter" style="padding: 10px; border: 2px solid #ddd; border-radius: 5px;">
+                    <option value="">All Prices</option>
+                    <option value="0-500">Under $500</option>
+                    <option value="500-1000">$500 - $1000</option>
+                    <option value="1000+">Over $1000</option>
+                </select>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <a href="./attached_assets/bbea3416-0fb4-475d-bf47-97d484244f62_1750997634172.png" target="_blank"><img src="./attached_assets/bbea3416-0fb4-475d-bf47-97d484244f62_1750997634172.png" alt="Mobile Drying Rack"></a>
+                    <div class="product-info">
+                        <h3>Mobile Drying Rack - Standard</h3>
+                        <p>Heavy-duty mobile drying rack with 20 wire shelves. Perfect for screen printing shops and art studios.</p>
+                        <ul class="features">
+                            <li>20 adjustable wire shelves</li>
+                            <li>Heavy-duty casters for mobility</li>
+                            <li>Powder-coated green frame</li>
+                            <li>Dimensions: 24" x 24" x 48"</li>
+                        </ul>
+                        <div class="price">$449.99</div>
+                        <button class="add-to-cart" onclick="addToCart('standard-rack', 449.99)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="./attached_assets/1.jpg" target="_blank"><img src="./attached_assets/1.jpg" alt="Compact Drying Rack"></a>
+                    <div class="product-info">
+                        <h3>Compact Drying Rack</h3>
+                        <p>Space-saving design with maximum drying capacity. Ideal for smaller studios and workshops.</p>
+                        <ul class="features">
+                            <li>15 adjustable wire shelves</li>
+                            <li>Compact footprint design</li>
+                            <li>Easy assembly</li>
+                            <li>Dimensions: 20" x 20" x 40"</li>
+                        </ul>
+                        <div class="price">$349.99</div>
+                        <button class="add-to-cart" onclick="addToCart('compact-rack', 349.99)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="./attached_assets/2.jpg" target="_blank"><img src="./attached_assets/2.jpg" alt="Heavy Duty Drying Rack"></a>
+                    <div class="product-info">
+                        <h3>Heavy Duty Drying Rack - Pro</h3>
+                        <p>Our premium model designed for high-volume commercial operations with enhanced durability.</p>
+                        <ul class="features">
+                            <li>30 heavy-duty wire shelves</li>
+                            <li>Reinforced frame construction</li>
+                            <li>Commercial-grade casters</li>
+                            <li>Dimensions: 30" x 30" x 60"</li>
+                        </ul>
+                        <div class="price">$649.99</div>
+                        <button class="add-to-cart" onclick="addToCart('pro-rack', 649.99)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="./attached_assets/3.jpg" target="_blank"><img src="./attached_assets/3.jpg" alt="Heavy Duty Drying Rack"></a>
+                    <div class="product-info">
+                        <h3>Heavy Duty Drying Rack - Pro</h3>
+                        <p>Our premium model designed for high-volume commercial operations with enhanced durability.</p>
+                        <ul class="features">
+                            <li>30 heavy-duty wire shelves</li>
+                            <li>Reinforced frame construction</li>
+                            <li>Commercial-grade casters</li>
+                            <li>Dimensions: 30" x 30" x 60"</li>
+                        </ul>
+                        <div class="price">$649.99</div>
+                        <button class="add-to-cart" onclick="addToCart('pro-rack', 649.99)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="./attached_assets/4.jpg" target="_blank"><img src="./attached_assets/4.jpg" alt="Heavy Duty Drying Rack"></a>
+                    <div class="product-info">
+                        <h3>Heavy Duty Drying Rack - Pro</h3>
+                        <p>Our premium model designed for high-volume commercial operations with enhanced durability.</p>
+                        <ul class="features">
+                            <li>30 heavy-duty wire shelves</li>
+                            <li>Reinforced frame construction</li>
+                            <li>Commercial-grade casters</li>
+                            <li>Dimensions: 30" x 30" x 60"</li>
+                        </ul>
+                        <div class="price">$649.99</div>
+                        <button class="add-to-cart" onclick="addToCart('pro-rack', 649.99)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="./attached_assets/5.jpg" target="_blank"><img src="./attached_assets/5.jpg" alt="Heavy Duty Drying Rack"></a>
+                    <div class="product-info">
+                        <h3>Heavy Duty Drying Rack - Pro</h3>
+                        <p>Our premium model designed for high-volume commercial operations with enhanced durability.</p>
+                        <ul class="features">
+                            <li>30 heavy-duty wire shelves</li>
+                            <li>Reinforced frame construction</li>
+                            <li>Commercial-grade casters</li>
+                            <li>Dimensions: 30" x 30" x 60"</li>
+                        </ul>
+                        <div class="price">$649.99</div>
+                        <button class="add-to-cart" onclick="addToCart('pro-rack', 649.99)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="./attached_assets/6.jpg" target="_blank"><img src="./attached_assets/6.jpg" alt="Heavy Duty Drying Rack"></a>
+                    <div class="product-info">
+                        <h3>Heavy Duty Drying Rack - Pro</h3>
+                        <p>Our premium model designed for high-volume commercial operations with enhanced durability.</p>
+                        <ul class="features">
+                            <li>30 heavy-duty wire shelves</li>
+                            <li>Reinforced frame construction</li>
+                            <li>Commercial-grade casters</li>
+                            <li>Dimensions: 30" x 30" x 60"</li>
+                        </ul>
+                        <div class="price">$649.99</div>
+                        <button class="add-to-cart" onclick="addToCart('pro-rack', 649.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <strong>Total: $<span id="cart-total">0.00</span></strong>
+            </div>
+            <div class="cart-actions">
+                <button class="checkout-btn">Proceed to Checkout</button>
+                <button class="clear-cart-btn" onclick="clearCart()">Clear Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ProDry Equipment</h3>
+                    <p>Your trusted partner for professional drying solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ProDry Equipment. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
